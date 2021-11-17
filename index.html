@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&family=Oswald:wght@300&family=Raleway:wght@100&family=Roboto:ital,wght@1,100&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+        integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/css/global.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <title>DEVIT</title>
+
+    </style>
+</head>
+
+<body>
+    <div id="wrapper">
+        <div id="header">
+            <div class="container justify-content-between">
+                <a id="logo" href="">
+                    <img width="150px" height="40px" src="./assets/img/logo-team.png" alt="logo">
+                </a>
+                <!-- end logo -->
+                <form id="search">
+                    <input type="text" name="q" placeholder="Bạn muốn tìm gì?">
+                    <button>
+                        <i class="fas fa-search"></i>
+                    </button>
+                </form>
+            </div>
+            <div class="container">
+                <nav>
+                    <ul id="main-menu" class="d-flex">
+                        <li><a href="https://www.facebook.com/groups/231592575664749">Trang chủ</a></li>
+                        <li><a href="">Xã hội</a></li>
+                        <li><a href="">Thể thao</a></li>
+                        <li><a href="">Video</a></li>
+                        <li><a href="">Sự kiện</a></li>
+                        <li><a href="https://www.facebook.com/profile.php?id=100050625162095">Liên hệ</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <!-- end header -->
+        <div id="wp-featurd-post" class="container">
+            <div class="box featurd-post">
+                <div class="box-head">
+                    <h3>Nổi bật</h3>
+                </div>
+                <div class="box-body image">
+                    <img id="img" onclick="changeImage()" style="border-radius:30px; margin-left: 100px;" width="900px"
+                        height="500px" src="./assets/img/lop1.jpg" alt="">
+                </div>
+                <script>
+                    var index = 1;
+                    changeImage = function () {
+                        var imgs = ["./assets/img/lop1.jpg", "./assets/img/lop2.jpg", "./assets/img/lop3.jpg", "./assets/img/lop4.jpg", "./assets/img/lop5.jpg",
+                         "./assets/img/lop6.jpg", "./assets/img/lop7.jpg", "./assets/img/lop8.jpg", "./assets/img/lop9.jpg", "./assets/img/lop10.jpg"]
+                        document.getElementById('img').src = imgs[index];
+                        index++;
+                        if (index == 10) {
+                            index = 0;
+                        }
+                    }
+                    setInterval(changeImage, 1000)
+                </script>
+                <hr>
+            </div>
+        </div>
+        <!-- end featurd-post -->
+        <div id="wp-content " class="container">
+            <div id="content">
+                <div class="box new-post">
+                    <div class="box-head">
+                        <h3>Bài viết mới</h3>
+                    </div>
+                    <div class="box-body">
+                        <ul class="list-post">
+                            <li>
+                                <a href="" class="post-thumb">
+                                    <img width="300px" height="198px" src="./assets/img/hào.jpg" alt="">
+                                </a>
+                                <div class="more-info">
+                                    <a href="https://www.facebook.com/profile.php?id=100038934961840"
+                                        class="post-title">
+                                        Tìm Trẻ Lạc
+                                    </a>
+                                    <div class="post-published">
+                                        <a href="https://www.facebook.com/profile.php?id=100038934961840"
+                                            class="post-author">Nguyễn Văn Hào</a>
+                                        <span class="post-date">17/11/2021</span>
+                                    </div>
+                                    <p class="post-excerpt">
+                                        Tìm bé Nguyễn Văn Hào quê ở Cần Thơ.
+                                        Ai gặp bé ở đâu xin báo tin về gia đình qua số điện thoại:0939056098 <br>
+                                        Xin trân thành cán ơn!
+                                    </p>
+                                </div>
+                            </li>
+                            <!-- hình 4 -->
+                            <li>
+                                <a href="" class="post-thumb">
+                                    <img width="300px" height="198px" src="./assets/img/bền.jpg" alt="">
+                                </a>
+                                <div class="more-info">
+                                    <a href="https://www.facebook.com/groups/231592575664749/user/100053198561333"
+                                        class="post-title">
+                                        Hacker
+                                    </a>
+                                    <div class="post-published">
+                                        <a href="https://www.facebook.com/groups/231592575664749/user/100053198561333"
+                                            class="post-author">Hà Thanh Bền</a>
+                                        <span class="post-date">17/11/2021</span>
+                                    </div>
+                                    <p class="post-excerpt">
+                                        Một tên hacker khét tiếng trong DH20TIN02 hắng là tên nắm trùm gần 500 ae chỉ là
+                                        gần thui nha còn số thiệt thì 54 đàn em.Bền là một Dev đang theo học và định
+                                        chuyên về ứng dụng app, game,...
+                                    </p>
+                                </div>
+                            </li>
+                            <!-- hình 5 -->
+                            <li>
+                                <video width="300px" height="198px" class="post-thumb" autoplay="1" controls="controls">
+                                    <source src="./assets/img/khang.mp4">
+                                </video>
+                                <div class="more-info">
+                                    <a href="https://www.facebook.com/vukhang.09" class="post-title">
+                                        Hãy xách balo lên và đi và trải nghiệm những khoảnh khắc thú vị
+                                    </a>
+                                    <div class="post-published">
+                                        <a href="https://www.facebook.com/vukhang.09" class="post-author">Lê Vũ
+                                            Khang</a>
+                                        <span class="post-date">17/11/2021</span>
+                                    </div>
+                                    <p class="post-excerpt">
+                                        Lê Vũ Khang đang theo học tại trường DH NAM Cần Thơ là người con của Sóc Trăng
+                                        đang là tuyển thủ bóng chuyền của DH20TIN02
+                                    </p>
+                                </div>
+                            </li>
+                            <!-- hình 8 -->
+                            <li>
+                                <video width="300px" height="198px" class="post-thumb" autoplay="1" controls="controls">
+                                    <source src="./assets/img/quy.mp4">
+                                </video>
+                                <div class="more-info">
+                                    <a href="" class="post-title">
+                                        Top 10 ca sĩ hót nhất DH20TIN02
+                                    </a>
+                                    <div class="post-published">
+                                        <a href="https://www.facebook.com/quy.phuc.923" class="post-author">Ngô Phúc
+                                            Quý</a>
+                                        <span class="post-date">17/11/2021</span>
+                                    </div>
+                                    <p class="post-excerpt">
+                                        Vô tư để tẳng thêm sức sống trong cuộc sống
+                                    </p>
+                                </div>
+                            </li>
+                            <!-- hình 9 -->
+                            <li>
+                            <li>
+                                <video class="post-thumb" autoplay="1" controls="controls" width="280px">
+                                    <source src="./assets/img/D_P_N.mp4" />
+                                </video>
+                                <div class="more-info">
+                                    <a href="https://www.facebook.com/profile.php?id=100050625162095"
+                                        class="post-title">
+                                        Đổ Phước Nguyên
+                                    </a>
+                                    <div class="post-published">
+                                        <a href="https://www.facebook.com/profile.php?id=100050625162095"
+                                            class="post-author">Phước Nguyên</a>
+                                        <span class="post-date">17/11/2021</span>
+                                    </div>
+                                    <p class="post-excerpt">
+                                        Thông điệp của video: ""Trong điều kiện dịch bệnh Covid – 19 ngày càng diễn biến
+                                        phức tạp trên nhiều tỉnh thành trong cả nước như hiện nay. Chúng ta tập thể dục
+                                        thể thao để nâng cao sức khỏe, phòng chống bệnh tật, nhất là những bệnh mang
+                                        tính lây nhiễm cao. Cố gắng giữ gìn sức khỏe vẫn là điều hot nhất hiện nay.
+                                    </p>
+                                </div>
+
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+            <!-- end content -->
+            <div id="sidebar">
+                <a href="" class="ads">
+                    <img width="400px" height="225px" src="./assets/img/lop.jpg" alt="">
+                </a>
+                <div class="box top-topic">
+                    <div class="box-head">
+                        <h3>Chủ đề quan tâm</h3>
+                    </div>
+                    <div class="box-body">
+                        <ul class="list-topic">
+                            <li>
+                                <a href="">Xã hội<span class="num-post">26</span></a>
+                            </li>
+                            <li>
+                                <a href="">Thể Thao<span class="num-post">35</span></a>
+                            </li>
+                            <li>
+                                <a href="">Video<span class="num-post">3</span></a>
+                            </li>
+                            <li>
+                                <a href="">Sự kiện<span class="num-post">15</span></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- end sidebar -->
+        </div>
+        <!-- end wp-content -->
+        <div id="footer">
+            <div class="container ">
+                <div class="box d-flex ">
+                    <div class="box logo-footer">
+                        <div class="box-head ">
+                            <h3>UNITOP</h3>
+                        </div>
+                        <div class="box-body ">
+                            <a href="">
+                                <img width="200px" height="60px" src="./assets/img/logo-team.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <!-- 1 -->
+                    <div class="box about-us">
+                        <div class="box-head">
+                            <h3>Về chúng tôi</h3>
+                        </div>
+                        <div class="box-body">
+                            <p>
+                                Dev-IT là một team do chúng tôi sáng lập ra để hộ trợ nhau để trở thành Dev
+                            </p>
+                            <a href="https://zalo.me/g/elvmrv784">https://zalo.me/g/elvmrv784"</a>
+                        </div>
+                    </div>
+                    <!-- 2 -->
+                    <div class="box follow-us">
+                        <div class="box-head">
+                            <h3>Theo dõi</h3>
+                        </div>
+                        <div class="box-body">
+                            <ul class="list-social d-flex">
+                                <li>
+                                    <a href=""><i class="fab fa-facebook-square"></i></a>
+                                </li>
+                                <li>
+                                    <a href=""><i class="fab fa-instagram-square"></i></a>
+                                </li>
+                                <li>
+                                    <a href=""><i class="fab fa-youtube-square"></i></a>
+                                </li>
+                                <li>
+                                    <a href=""><i class="fab fa-pinterest-p"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- 3 -->
+                </div>
+            </div>
+        </div>
+        <!-- end footer -->
+        <div id="wp-copyright">
+            <div class="container justify-content-between">
+                <p class="copyright">
+                    © nguyenpro@gmail.com - Team-Dev-IT
+                </p>
+                <ul class="d-flex menu">
+                    <li><a href="">Bảo mật</a></li>
+                    <li><a href="">Quảng cáo</a></li>
+                    <li><a href="">Liên hệ</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- end copyright -->
+    </div>
+</body>
+
+</html>

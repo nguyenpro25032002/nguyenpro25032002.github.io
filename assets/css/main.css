@@ -1,0 +1,282 @@
+/* Từ ngoài vào trong */
+/* từ sau ra trước */
+/* Từ trên xuống dưới */
+/* từ trái sang phải */
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+}
+.container {
+  width: 1170px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0px auto;
+  display: flex;
+}
+ul {
+    list-style: none;
+    padding: 0;
+}
+/* =====header====== */
+#wp-featurd-post{
+    margin-bottom: 20px;
+}
+#header {
+    background-color: #23282d;
+    padding-top: 27px;
+    padding-bottom: 10px;
+}
+form#search{
+    position: relative;
+}
+form#search input {
+    background: #131619;
+    width: 248px;
+    border: none;
+    outline: none;
+    padding: 9px 42px 9px 15px;
+    color: #909090;
+}
+form#search button{
+    position: absolute;
+    top: 9px;
+    right: 0px;
+    background: none;
+    border: none;
+    color: #a2a1a1;
+}
+form#search ::placeholder{
+    color: #909090;
+}
+nav{
+    margin-top: 7px;
+    flex: 100%;
+    border-right: 4px solid #ff2d2d;
+}
+
+ul#main-menu li a{
+    text-decoration: none;
+    padding: 6px 20px;
+    display: block;
+    color: #eeeeee;
+}
+ul#main-menu li:first-child a{
+    padding-left: 0;
+}
+ul#main-menu li:hover a{
+    color: #4db2ec;
+}
+/* ===========featurd-post============== */
+.box .box-head h3{
+    display: inline-flex;
+    color: #eee;
+    background: #23282d;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 20px;
+    padding: 1px 15px;
+    margin-bottom: 0;
+}
+.box .box-body {
+    padding-top: 20px;
+    
+}
+.box .featured-post .box-body{
+    padding-bottom: 30px;
+    border-bottom: 2px solid #131212;
+}
+ul.list-featured-post li {
+    flex: 360px 0 1;
+    padding: 0 6px;
+} 
+ul.list-featured-post li a.post-title {
+    color: #313030;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    display: block;
+    margin-top: 20px;
+}
+ul.list-featured-post li a.post-title:hover{
+    color: #4db2ec;
+}
+hr{
+    margin-bottom:  20px;
+}
+
+/* ============wp-content========== */
+#content{
+    flex: 765px;
+    padding-right: 15px;
+}
+#sidebar{
+    flex: 375px;
+    padding-left: 90px;
+}
+.box.new-post .box-head
+{
+    border-bottom:3px solid #4db2ec;
+}
+.box.new-post .box-head h3{
+    background: #4db2ec;
+}
+ul.list-post li{
+    display: flex;
+    margin-bottom: 40px;
+}
+ul.list-post li .post-thumb {
+    display: block;
+    padding-right: 15px;
+    flex: 280px;
+}
+/* Đầu dính sao cách lưu ý */
+ul.list-post li .more-info{
+    padding-left: 15px;
+}
+ul.list-post li .more-info .post-title{
+    text-decoration: none;
+    color: #111111;
+    display: block;
+    font-size: 21px;
+    font-weight: 600;
+}
+ul.list-post li .more-info a.post-title:hover
+,ul.list-post li .post-author:hover,
+ul.menu li a:hover
+{
+    color: #4db2ec;
+}
+ul.list-post li .more-info .post-published{
+    font-size: 12px;
+    font-weight: 600;
+    padding: 6px auto;
+}
+ul.list-post li .post-author{
+    text-decoration: none;
+    color: #111111;
+}
+ul.list-post li .post-date{
+    color: #aaa;
+}
+ul.list-post li .post-excerpt{
+    font-size: 15px;
+    color: #777777;
+    margin-bottom: 0;
+}
+/* sibar */
+#sidebar a.ads{
+    
+    display: block;
+    margin-bottom: 40px;
+}
+.box.top-topic .box-head {
+    border-bottom: 3px solid #ff2d2d;
+}
+.box.top-topic .box-head h3{
+    background: #ff2d2d;
+}
+ul.list-topic li a {
+    position: relative;
+    text-decoration: none;
+    display: block;
+    color: #212121;
+    font-size: 17px;
+    padding: 6px 0px;
+}
+.box.top-topic li a span.num-post {
+    position: absolute;
+    top: 7px;
+    right: 20px
+}
+.box.top-topic li:hover a,
+#footer .box.about-us a:hover{
+    color: #ff2d2d;
+}
+/* =========footer========= */
+#footer {
+    display: block;
+    background: #2e2f30;
+    padding-top: 52px;
+    padding-bottom: 75px;
+}
+
+#footer .box .box-head h3{
+    background: none;
+    padding-left: 0;
+    padding-right: 0;
+}
+#footer .logo-footer{
+    flex: 280px;
+    padding-right: 15px;
+}
+#footer .box.about-us {
+    color: #eee;
+    flex: 680px;
+    padding-left: 15px;
+    padding-right: 180px;
+}
+#footer .box.about-us a{
+    text-decoration: none;
+    color: #4db2ec;
+}
+/* Ẩn phần tử visibility */
+.box.logo-footer .box-head{
+    visibility: hidden;
+}
+#footer .box.follow-us {
+    flex: 180px;
+    padding-left: 15px;
+}
+#footer .box .box-body{
+    padding-top: 30px;
+}
+ul.list-social li a {
+    background: #434648;
+    padding: 5px 12px;
+    color: #eeeeee;
+    display: block;
+}
+ul.list-social li:first-child{
+    margin-left:0 ;
+}
+ul.list-social li{
+    margin-left: 15px;
+}
+ul.list-social li:hover a{
+    color: #4a93bc;
+}
+/* copyright */
+#wp-copyright{
+    background: #222527;
+    color: #f3f3f3;
+    padding-top: 11px;
+    padding-bottom: 11px;
+    font-size: 17px;
+}
+#wp-copyright .copyright {
+    margin-bottom: 0;
+}
+ul.menu li a{
+    color: #f3f3f3;
+    text-decoration: none;
+    padding: 0px 13px;
+    display: block;
+}
+ul.menu li :last-child a{
+    padding-right: 0;
+}
+
+/* //Mobia// */
+/* @meida only screen and (max-width:46.1875em){
+    .container {
+        flex-direction: column;
+}
+@meida only screen and (min-width:46.1875em) and (max-width:63.9375em){
+    
+} */
+
+
+

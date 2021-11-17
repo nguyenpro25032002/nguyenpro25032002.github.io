@@ -1,0 +1,32 @@
+.justify-content-between{
+    justify-content: space-between;
+}
+.d-flex{
+    display: flex;
+}
+
+/* ảnh nổi bật nhưng ko dùng tới
+<ul class="list-featured-post d-flex justify-content-between haha">
+                        <li>
+                            <a href="" class="post-thumb ">
+                                <img src="./assets/img/pic1.png" alt="">
+                            </a>
+                            <a href="" class="post-title">Xu hướng thời trang hè 2020: Những mảnh ghép đáng được chú
+                                ý</a>
+                        </li>
+                        <li>
+                            <a href="" class="post-thumb">
+                                <img src="./assets/img/pic2.png" alt="">
+                            </a>
+                            <a href="" class="post-title">Buổi trình diễn thời trang mùa xuân tại Đại học Michigan đã
+                                bắt đầu</a>
+                        </li>
+                        <li>
+                            <a href="" class="post-thumb">
+                                <img src="./assets/img/pic3.png" alt="">
+                            </a>
+                            <a href="" class="post-title">Bật mí cách mặc đẹp cho người mập trở nên thon gọn</a>
+                        </li>
+                    </ul> */
+
+
